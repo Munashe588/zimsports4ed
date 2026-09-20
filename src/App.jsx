@@ -1400,7 +1400,7 @@ function App() {
     <div>
   <p>© 2026 ZimSports4ED. All rights reserved.</p>
   <p className="developer-credit">
-    Digital Platform Design & Development — Munashe Tsoka • Student Developer
+    Digital Platform Design & Development — Munashe Tsoka • IT Support and Web Developer
   </p>
 </div>
 
