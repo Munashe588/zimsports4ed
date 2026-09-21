@@ -1332,39 +1332,44 @@ function App() {
   </div>
 
   <div className="social-links">
-  <p>Connect with us</p>
+  <a
+    href="https://www.instagram.com/zimsport4ed_?stkn=MWZqaHh1YjBteXo3NQ%3D%3D&utm_source=qr"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Instagram"
+    title="Instagram"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6zm5.5-3.5a1.25 1.25 0 1 0 0 2.5 1.25 1.25 0 0 0 0-2.5z" />
+    </svg>
+    <span>Instagram</span>
+  </a>
 
-  <div className="social-buttons">
-    <a
-      href="https://www.instagram.com/zimsport4ed_?stkn=MWZqaHh1YjBteXo3NQ%3D%3D&utm_source=qr"
-      className="social-button"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      
-      Instagram
-    </a>
+  <a
+    href="https://www.facebook.com/tanya.mhofu.2025?mibextid=wwXIfr"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Facebook"
+    title="Facebook"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M13.5 22v-9h3l.5-3h-3.5V8c0-.87.29-1.5 1.53-1.5H17V3.14C16.66 3.09 15.48 3 14.08 3 11.16 3 9.5 4.78 9.5 8.05V10H6.5v3h3v9h4z" />
+    </svg>
+    <span>Facebook</span>
+  </a>
 
-    <a
-      href="https://www.facebook.com/tanya.mhofu.2025?mibextid=wwXIfr"
-      className="social-button"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      
-      Facebook
-    </a>
-
-    <a
-      href="https://www.tiktok.com/@zimsport4ed_2030_zw?_r=1&_t=ZS-99rUofIYoWQ"
-      className="social-button"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      
-      TikTok
-    </a>
-  </div>
+  <a
+    href="https://www.tiktok.com/@zimsport4ed_2030_zw?_r=1&_t=ZS-99rUofIYoWQ"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="TikTok"
+    title="TikTok"
+  >
+    <svg viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M16.6 5.82A4.85 4.85 0 0 1 13.77 3h-3.14v12.55a2.63 2.63 0 1 1-2.27-2.61V9.75a5.77 5.77 0 1 0 5.41 5.75V9.14a8 8 0 0 0 4.68 1.5V7.5a4.84 4.84 0 0 1-1.85-.68z" />
+    </svg>
+    <span>TikTok</span>
+  </a>
 </div>
 </section>
 
