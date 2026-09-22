@@ -2417,3 +2417,94 @@ main p {
 .vision-section {
   display: none !important;
 }
+/* =========================================
+   FINAL MOBILE FULL-SCREEN + HERO FIX
+   KEEP THIS AT THE BOTTOM OF App.css
+========================================= */
+
+html,
+body,
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+
+  /* Make main sections fill phone screen */
+  .hero,
+  section,
+  .programmes,
+  .sports-disciplines,
+  .news-section,
+  .gallery-section,
+  .contact-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  /* HERO */
+  .hero {
+    min-height: 600px !important;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.42),
+        rgba(0, 0, 0, 0.08)
+      ),
+      url('/hero.jpg') !important;
+
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+
+    /* IMPORTANT: keeps the athlete/subject more visible */
+    background-position: center center !important;
+
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .hero-content {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 60px 22px !important;
+    margin: 0 !important;
+  }
+
+  .hero h1 {
+    font-size: 44px !important;
+    line-height: 1.05 !important;
+    max-width: 100% !important;
+  }
+
+  .hero-text {
+    max-width: 100% !important;
+    font-size: 16px !important;
+  }
+
+  /* Stop grids/cards making page wider than phone */
+  .discipline-list,
+  .sports-grid,
+  .programme-grid,
+  .news-grid,
+  .gallery-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
