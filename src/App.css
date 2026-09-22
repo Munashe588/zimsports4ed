@@ -2452,23 +2452,29 @@ body,
     margin-right: 0 !important;
   }
 
-  /* HERO */
+  /* MOBILE HERO - SHOW FULL BACKGROUND IMAGE */
+@media (max-width: 768px) {
+
   .hero {
-    min-height: 600px !important;
+    width: 100% !important;
+    min-height: 0 !important;
+
+    /* Adjust this ratio if your hero image has a different shape */
+    aspect-ratio: 16 / 9;
 
     background-image:
       linear-gradient(
-        90deg,
-        rgba(0, 0, 0, 0.42),
+        rgba(0, 0, 0, 0.18),
         rgba(0, 0, 0, 0.08)
       ),
       url('/hero.jpg') !important;
 
-    background-size: cover !important;
+    /* SHOW THE ENTIRE IMAGE */
+    background-size: contain !important;
+    background-position: center center !important;
     background-repeat: no-repeat !important;
 
-    /* IMPORTANT: keeps the athlete/subject more visible */
-    background-position: center center !important;
+    background-color: #111;
 
     display: flex !important;
     align-items: center !important;
@@ -2476,21 +2482,19 @@ body,
 
   .hero-content {
     width: 100% !important;
-    max-width: 100% !important;
-    padding: 60px 22px !important;
-    margin: 0 !important;
+    padding: 25px 20px !important;
   }
 
   .hero h1 {
-    font-size: 44px !important;
+    font-size: 34px !important;
     line-height: 1.05 !important;
-    max-width: 100% !important;
   }
 
   .hero-text {
-    max-width: 100% !important;
-    font-size: 16px !important;
+    font-size: 14px !important;
+    line-height: 1.4 !important;
   }
+}
 
   /* Stop grids/cards making page wider than phone */
   .discipline-list,
