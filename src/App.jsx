@@ -436,31 +436,58 @@ function App() {
   const [selectedGalleryImage, setSelectedGalleryImage] = useState(null)
   return (
     <div>
-      {/* Navigation */}
-      <nav className="navbar">
-        <div className="logo">
-  <img src="/Logo.png" alt="ZimSports4ED logo" />
-</div>
+     {/* Navigation */}
+<nav className="navbar">
 
-        <button
-  className="menu-button"
-  onClick={() => setMenuOpen(!menuOpen)}
->
-  ☰
-</button>
-        <div className={`nav-links ${menuOpen ? 'menu-open' : ''}`}>
-         <a href="#">Home</a>
-<a href="#about">About</a>
-<a href="#programmes">Programmes</a>
-<a href="#talent">Talent</a>
-<a href="#talent">Opportunities</a>
-<a href="#contact">Contact</a>
-        </div>
+  <div className="logo">
+    <img src="/Logo.png" alt="ZimSports4ED logo" />
+  </div>
 
-        <a href="#contact" className="join-button">
-  Get Involved
-</a>
-      </nav>
+  {/* Mobile hamburger button */}
+  <button
+    className="mobile-menu-button"
+    onClick={() => setMenuOpen(!menuOpen)}
+    aria-label="Open navigation menu"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+
+  {/* Navigation links */}
+  <div className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
+
+    <a href="#" onClick={() => setMenuOpen(false)}>
+      Home
+    </a>
+
+    <a href="#about" onClick={() => setMenuOpen(false)}>
+      About
+    </a>
+
+    <a href="#programmes" onClick={() => setMenuOpen(false)}>
+      Programmes
+    </a>
+
+    <a href="#talent" onClick={() => setMenuOpen(false)}>
+      Talent
+    </a>
+
+    <a href="#talent" onClick={() => setMenuOpen(false)}>
+      Opportunities
+    </a>
+
+    <a href="#contact" onClick={() => setMenuOpen(false)}>
+      Contact
+    </a>
+
+  </div>
+
+  <a href="#contact" className="join-button">
+    Get Involved
+  </a>
+
+</nav>
 
       {/* Hero Section */}
       <section className="hero">
