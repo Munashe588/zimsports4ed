@@ -2358,3 +2358,62 @@ main p {
     height: 19px !important;
   }
 }
+/* =========================================
+   HERO BACKGROUND FINAL OVERRIDE
+========================================= */
+
+.hero {
+  min-height: 620px;
+
+  background-image:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.38) 0%,
+      rgba(0, 0, 0, 0.18) 45%,
+      rgba(0, 0, 0, 0.03) 75%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url('/hero.jpg') !important;
+
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+
+/* MOBILE HERO */
+@media (max-width: 768px) {
+
+  .hero {
+    min-height: 560px;
+
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.20),
+        rgba(0, 0, 0, 0.12)
+      ),
+      url('/hero.jpg') !important;
+
+    /*
+      100% auto shows more of the original image
+      instead of heavily zooming/cropping it.
+    */
+    background-size: 100% auto !important;
+
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+
+    /* Colour shown if image doesn't fill entire hero */
+    background-color: #222;
+  }
+
+}
+/* =========================================
+   HIDE LEADERSHIP / VISION SECTIONS
+========================================= */
+
+.leadership-section,
+.leadership-banner,
+.vision-section {
+  display: none !important;
+}
