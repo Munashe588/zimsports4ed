@@ -3009,3 +3009,845 @@ body,
   }
 
 }
+/* ==================================================
+   NEW ZIMSPORT4ED ATHLETE REGISTRATION DESIGN
+================================================== */
+
+.registration-page {
+  width: 100%;
+  min-height: 100vh;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.82) 0%,
+      rgba(0, 0, 0, 0.63) 38%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    url('/registration-bg.jpg');
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* HEADER */
+
+.registration-page .registration-page-header {
+  width: 100%;
+  min-height: 80px;
+
+  padding: 10px 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  box-sizing: border-box;
+}
+
+.registration-page .registration-logo {
+  display: flex;
+  align-items: center;
+}
+
+.registration-page .registration-logo img {
+  width: auto;
+  height: 60px;
+}
+
+.registration-page .back-to-website {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 11px 18px;
+
+  background: #fff;
+  color: #111;
+
+  border: 1px solid #ddd;
+  border-radius: 6px;
+
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+
+  transition: 0.25s ease;
+}
+
+.registration-page .back-to-website:hover {
+  background: #111;
+  color: #fff;
+  border-color: #111;
+}
+
+
+/* MAIN LAYOUT */
+
+.registration-page .registration-layout {
+  width: 100%;
+  max-width: 1450px;
+
+  margin: 0 auto;
+
+  padding: 70px 55px 90px;
+
+  display: grid;
+  grid-template-columns: minmax(320px, 0.85fr) minmax(550px, 1.15fr);
+
+  gap: 70px;
+
+  align-items: start;
+
+  box-sizing: border-box;
+}
+
+
+/* LEFT SIDE */
+
+.registration-page .registration-intro {
+  padding-top: 85px;
+
+  color: #fff;
+}
+
+.registration-page .registration-tag {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  color: #f5b400;
+
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 2.5px;
+}
+
+.registration-page .registration-intro h1 {
+  max-width: 580px;
+
+  margin: 0;
+
+  color: #fff;
+
+  font-size: clamp(46px, 5vw, 72px);
+  line-height: 1.02;
+
+  letter-spacing: -2px;
+}
+
+.registration-page .registration-intro h1 span {
+  display: inline-block;
+  color: #f5b400;
+}
+
+.registration-page .registration-intro > p {
+  max-width: 520px;
+
+  margin: 26px 0 0;
+
+  color: rgba(255, 255, 255, 0.92);
+
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+/* BENEFITS */
+
+.registration-page .registration-benefits {
+  display: grid;
+
+  gap: 14px;
+
+  margin-top: 34px;
+}
+
+.registration-page .registration-benefits div {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  color: #fff;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.registration-page .registration-benefits span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 25px;
+  height: 25px;
+
+  border-radius: 50%;
+
+  background: #f5b400;
+  color: #111;
+
+  font-size: 13px;
+  font-weight: 900;
+}
+
+
+/* WHITE REGISTRATION CARD */
+
+.registration-page .registration-section {
+  width: 100%;
+
+  margin: 0;
+
+  padding: 42px;
+
+  background: rgba(255, 255, 255, 0.96);
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 25px 70px rgba(0, 0, 0, 0.28);
+
+  box-sizing: border-box;
+}
+
+
+/* HEADER INSIDE CARD */
+
+.registration-page .registration-header {
+  max-width: 650px;
+
+  margin: 0 auto 32px;
+
+  text-align: center;
+}
+
+.registration-page .registration-header .section-label {
+  display: block;
+
+  margin-bottom: 10px;
+
+  color: #d89f00;
+
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.registration-page .registration-header h2 {
+  margin: 0 0 10px;
+
+  color: #111;
+
+  font-size: 38px;
+  line-height: 1.1;
+}
+
+.registration-page .registration-header p {
+  margin: 0;
+
+  color: #666;
+
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+
+/* REMOVE OLD FORM CARD */
+
+.registration-page .athlete-form {
+  width: 100%;
+  max-width: none;
+
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+
+  border-radius: 0;
+
+  box-shadow: none;
+}
+
+
+/* FORM ROWS */
+
+.registration-page .athlete-form .form-row {
+  display: grid;
+
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+
+  gap: 22px;
+
+  width: 100%;
+}
+
+.registration-page .athlete-form .form-group {
+  width: 100%;
+
+  margin-bottom: 22px;
+}
+
+.registration-page .athlete-form label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  color: #222;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.registration-page .athlete-form input,
+.registration-page .athlete-form select,
+.registration-page .athlete-form textarea {
+  display: block;
+
+  width: 100%;
+
+  padding: 14px 15px;
+
+  background: #fff;
+  color: #111;
+
+  border: 1px solid #d7d7d7;
+  border-radius: 7px;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  outline: none;
+
+  box-sizing: border-box;
+}
+
+.registration-page .athlete-form input,
+.registration-page .athlete-form select {
+  min-height: 50px;
+}
+
+.registration-page .athlete-form input:focus,
+.registration-page .athlete-form select:focus,
+.registration-page .athlete-form textarea:focus {
+  border-color: #f5b400;
+
+  box-shadow:
+    0 0 0 3px rgba(245, 180, 0, 0.12);
+}
+
+.registration-page .athlete-form textarea {
+  resize: vertical;
+}
+
+
+/* GUARDIAN */
+
+.registration-page .athlete-form .guardian-section {
+  width: 100%;
+
+  margin: 8px 0 26px;
+
+  padding: 25px;
+
+  background: #f5f5f5;
+
+  border-left: 4px solid #f5b400;
+  border-radius: 8px;
+
+  box-sizing: border-box;
+}
+
+.registration-page .guardian-section h3 {
+  margin: 0 0 6px;
+
+  color: #111;
+
+  font-size: 20px;
+}
+
+.registration-page .guardian-note {
+  margin: 0 0 22px;
+
+  color: #666;
+
+  font-size: 13px;
+}
+
+
+/* CONSENT */
+
+.registration-page .athlete-form .registration-consent {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 12px;
+
+  width: 100%;
+
+  margin: 0 0 26px;
+}
+
+.registration-page
+.athlete-form
+.registration-consent
+input[type="checkbox"] {
+  width: 18px !important;
+  height: 18px !important;
+
+  min-height: 18px;
+
+  margin: 3px 0 0;
+
+  padding: 0;
+
+  flex: 0 0 18px;
+}
+
+.registration-page .registration-consent label {
+  margin: 0;
+
+  color: #555;
+
+  font-size: 13px;
+  font-weight: 400;
+
+  line-height: 1.6;
+}
+
+
+/* BUTTON */
+
+.registration-page .register-submit {
+  width: 100%;
+
+  min-height: 54px;
+
+  padding: 15px 25px;
+
+  background: #f5b400;
+  color: #111;
+
+  border: none;
+  border-radius: 7px;
+
+  font-size: 16px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.registration-page .register-submit:hover {
+  background: #111;
+  color: #fff;
+
+  transform: translateY(-2px);
+}
+
+.registration-page .register-submit:disabled {
+  opacity: 0.65;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .registration-page {
+    background-attachment: scroll;
+  }
+
+  .registration-page .registration-layout {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    padding: 45px 25px 70px;
+  }
+
+  .registration-page .registration-intro {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    padding-top: 25px;
+
+    text-align: center;
+  }
+
+  .registration-page .registration-intro h1 {
+    margin: 0 auto;
+  }
+
+  .registration-page .registration-intro > p {
+    margin: 22px auto 0;
+  }
+
+  .registration-page .registration-benefits {
+    max-width: 360px;
+
+    margin: 30px auto 0;
+
+    text-align: left;
+  }
+
+  .registration-page .registration-section {
+    max-width: 800px;
+
+    margin: 0 auto;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .registration-page {
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.62),
+        rgba(0, 0, 0, 0.55)
+      ),
+      url('/registration-bg.jpg');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .registration-page .registration-page-header {
+    min-height: 68px;
+
+    padding: 8px 15px;
+  }
+
+  .registration-page .registration-logo img {
+    height: 48px;
+  }
+
+  .registration-page .back-to-website {
+    padding: 8px 10px;
+
+    font-size: 11px;
+  }
+
+  .registration-page .registration-layout {
+    padding: 35px 14px 50px;
+
+    gap: 30px;
+  }
+
+  .registration-page .registration-intro {
+    padding-top: 8px;
+  }
+
+  .registration-page .registration-tag {
+    margin-bottom: 14px;
+
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .registration-page .registration-intro h1 {
+    font-size: 38px;
+
+    line-height: 1.05;
+
+    letter-spacing: -1px;
+  }
+
+  .registration-page .registration-intro > p {
+    font-size: 15px;
+
+    line-height: 1.6;
+  }
+
+  .registration-page .registration-benefits {
+    gap: 11px;
+
+    margin-top: 24px;
+  }
+
+  .registration-page .registration-benefits div {
+    font-size: 14px;
+  }
+
+  .registration-page .registration-section {
+    padding: 28px 18px;
+
+    border-radius: 12px;
+  }
+
+  .registration-page .registration-header {
+    margin-bottom: 25px;
+  }
+
+  .registration-page .registration-header h2 {
+    font-size: 30px;
+  }
+
+  .registration-page .athlete-form .form-row {
+    grid-template-columns: 1fr;
+
+    gap: 0;
+  }
+
+  .registration-page
+  .athlete-form
+  .guardian-section {
+    padding: 21px 17px;
+  }
+
+  .registration-page
+  .guardian-section
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+.registration-page .athlete-form label {
+  text-align: left !important;
+}
+
+.registration-page .registration-section {
+  background: rgba(255, 255, 255, 0.94) !important;
+}
+
+.registration-page .registration-intro h1 {
+  font-size: clamp(44px, 4.3vw, 66px) !important;
+}
+/* =========================================
+   FINAL MOBILE REGISTRATION POLISH
+========================================= */
+
+@media (max-width: 600px) {
+
+  /* Background */
+  .registration-page {
+    background:
+      linear-gradient(
+        rgba(0, 0, 0, 0.48),
+        rgba(0, 0, 0, 0.58)
+      ),
+      url('/registration-bg.jpg') !important;
+
+    background-size: cover !important;
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+  }
+
+
+  /* Top header */
+  .registration-page .registration-page-header {
+    min-height: 62px !important;
+    padding: 7px 12px !important;
+  }
+
+  .registration-page .registration-logo img {
+    height: 45px !important;
+  }
+
+  .registration-page .back-to-website {
+    padding: 8px 10px !important;
+    font-size: 11px !important;
+  }
+
+
+  /* Main page */
+  .registration-page .registration-layout {
+    display: block !important;
+
+    width: 100% !important;
+
+    padding: 0 12px 35px !important;
+  }
+
+
+  /* Compact visual introduction */
+  .registration-page .registration-intro {
+    min-height: auto !important;
+
+    padding: 32px 5px 28px !important;
+
+    text-align: left !important;
+  }
+
+  .registration-page .registration-tag {
+    margin-bottom: 10px !important;
+
+    font-size: 9px !important;
+    letter-spacing: 1.5px !important;
+  }
+
+  .registration-page .registration-intro h1 {
+    max-width: 330px !important;
+
+    margin: 0 !important;
+
+    font-size: 36px !important;
+    line-height: 1.02 !important;
+    letter-spacing: -1px !important;
+
+    text-align: left !important;
+  }
+
+  .registration-page .registration-intro h1 span {
+    display: block !important;
+  }
+
+  .registration-page .registration-intro > p {
+    max-width: 330px !important;
+
+    margin: 16px 0 0 !important;
+
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+
+    text-align: left !important;
+  }
+
+
+  /* Benefits become compact 2 x 2 */
+  .registration-page .registration-benefits {
+    width: 100% !important;
+    max-width: 340px !important;
+
+    margin: 20px 0 0 !important;
+
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+
+    gap: 10px 8px !important;
+  }
+
+  .registration-page .registration-benefits div {
+    gap: 7px !important;
+
+    font-size: 11px !important;
+  }
+
+  .registration-page .registration-benefits span {
+    width: 20px !important;
+    height: 20px !important;
+
+    flex: 0 0 20px !important;
+
+    font-size: 10px !important;
+  }
+
+
+  /* Registration card */
+  .registration-page .registration-section {
+    width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 25px 16px !important;
+
+    border-radius: 12px !important;
+
+    background: rgba(255, 255, 255, 0.96) !important;
+  }
+
+
+  /* Registration heading */
+  .registration-page .registration-header {
+    margin-bottom: 24px !important;
+  }
+
+  .registration-page .registration-header .section-label {
+    font-size: 9px !important;
+    letter-spacing: 1.5px !important;
+  }
+
+  .registration-page .registration-header h2 {
+    font-size: 27px !important;
+    line-height: 1.1 !important;
+  }
+
+  .registration-page .registration-header p {
+    max-width: 280px !important;
+
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    font-size: 13px !important;
+  }
+
+
+  /* All fields one column */
+  .registration-page .athlete-form .form-row {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+
+    gap: 0 !important;
+  }
+
+  .registration-page .athlete-form .form-group {
+    margin-bottom: 17px !important;
+  }
+
+  .registration-page .athlete-form label {
+    margin-bottom: 7px !important;
+
+    text-align: left !important;
+
+    font-size: 13px !important;
+  }
+
+  .registration-page .athlete-form input,
+  .registration-page .athlete-form select,
+  .registration-page .athlete-form textarea {
+    width: 100% !important;
+
+    font-size: 16px !important;
+
+    box-sizing: border-box !important;
+  }
+
+
+  /* Guardian */
+  .registration-page .guardian-section {
+    padding: 18px 14px !important;
+  }
+
+  .registration-page .guardian-section h3 {
+    font-size: 18px !important;
+  }
+
+
+  /* Consent */
+  .registration-page .registration-consent {
+    gap: 10px !important;
+  }
+
+  .registration-page .registration-consent label {
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+  }
+
+
+  /* Submit */
+  .registration-page .register-submit {
+    min-height: 52px !important;
+
+    font-size: 15px !important;
+  }
+}
