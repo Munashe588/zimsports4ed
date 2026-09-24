@@ -2,6 +2,7 @@ import './App.css'
 import { useState } from 'react'
 import { Routes, Route } from 'react-router-dom'
 import AthleteRegistration from './components/AthleteRegistration'
+import AdminDashboard from './components/AdminDashboard'
 const sportsData = {
   Football: {
     overview:
@@ -440,6 +441,9 @@ function App() {
  
 if (window.location.pathname === '/register') {
   return <AthleteRegistration />
+}
+if (window.location.pathname === '/admin') {
+  return <AdminDashboard />
 }
   return (
     <div>

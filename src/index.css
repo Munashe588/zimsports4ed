@@ -19,3 +19,25 @@ button,
 a {
   font-family: inherit;
 }
+/* =========================================
+   MOBILE - FOUR DEVELOPMENT CARDS
+========================================= */
+
+@media (max-width: 600px) {
+
+  /* Container holding the four cards */
+  .development-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    gap: 16px !important;
+  }
+
+  /* Individual cards */
+  .development-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    margin: 0 !important;
+  }
+}
