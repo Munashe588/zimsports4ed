@@ -1,5 +1,7 @@
 import './App.css'
 import { useState } from 'react'
+import { Routes, Route } from 'react-router-dom'
+import AthleteRegistration from './components/AthleteRegistration'
 const sportsData = {
   Football: {
     overview:
@@ -431,9 +433,14 @@ const programmes = [
 ]
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
+
   const [selectedProgramme, setSelectedProgramme] = useState(null)
   const [selectedSport, setSelectedSport] = useState(null)
   const [selectedGalleryImage, setSelectedGalleryImage] = useState(null)
+ 
+if (window.location.pathname === '/register') {
+  return <AthleteRegistration />
+}
   return (
     <div>
      {/* Navigation */}
@@ -454,38 +461,46 @@ function App() {
     <span></span>
   </button>
 
-  {/* Navigation links */}
-  <div className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
+ {/* Navigation links */}
+<div className={`nav-links ${menuOpen ? 'nav-open' : ''}`}>
 
-    <a href="#" onClick={() => setMenuOpen(false)}>
-      Home
-    </a>
-
-    <a href="#about" onClick={() => setMenuOpen(false)}>
-      About
-    </a>
-
-    <a href="#programmes" onClick={() => setMenuOpen(false)}>
-      Programmes
-    </a>
-
-    <a href="#talent" onClick={() => setMenuOpen(false)}>
-      Talent
-    </a>
-
-    <a href="#talent" onClick={() => setMenuOpen(false)}>
-      Opportunities
-    </a>
-
-    <a href="#contact" onClick={() => setMenuOpen(false)}>
-      Contact
-    </a>
-
-  </div>
-
-  <a href="#contact" className="join-button">
-    Get Involved
+  <a href="#" onClick={() => setMenuOpen(false)}>
+    Home
   </a>
+
+  <a href="#about" onClick={() => setMenuOpen(false)}>
+    About
+  </a>
+
+  <a href="#programmes" onClick={() => setMenuOpen(false)}>
+    Programmes
+  </a>
+
+  <a href="#talent" onClick={() => setMenuOpen(false)}>
+    Talent
+  </a>
+
+  <a href="#talent" onClick={() => setMenuOpen(false)}>
+    Opportunities
+  </a>
+
+  <a href="#contact" onClick={() => setMenuOpen(false)}>
+    Contact
+  </a>
+
+  <a
+    href="/register"
+    className="register-nav"
+    onClick={() => setMenuOpen(false)}
+  >
+    Register
+  </a>
+
+</div>
+
+<a href="#contact" className="join-button">
+  Get Involved
+</a>
 
 </nav>
 
@@ -996,27 +1011,6 @@ function App() {
     </div>
   </div>
 </section>
-{/* Leadership Banner */}
-<section className="leadership-banner">
-  <div className="leadership-overlay">
-    <div className="leadership-content">
-      <p className="section-label">LEADERSHIP & VISION</p>
-
-      <h2>Building opportunities through sport.</h2>
-
-      <p>
-        A shared commitment to developing young talent,
-        creating opportunities and strengthening communities
-        through sport.
-      </p>
-
-      <div className="leadership-name">
-        <strong>Chairperson</strong>
-        <span>ZimSports4ED</span>
-      </div>
-    </div>
-  </div>
-</section>
 {/* News & Events */}
 <section id="news" className="news-section">
   <div className="news-header">
@@ -1188,55 +1182,9 @@ function App() {
 
   </div>
 </section>
-{/* Team Section */}
 
-<section id="team" className="team-section">
-  <div className="team-header">
-   <p className="section-label">LEADERSHIP & PARTNERS</p>
-<h2>People supporting the movement.</h2>
-    <p>
-      Meet the people working to develop young talent,
-      create opportunities and strengthen communities through sport.
-    </p>
-  </div>
 
-  <div className="team-grid">
 
-    <div className="team-card">
-      <div className="team-image">
-        <img src="/staff-1.jpg" alt="ZimSports4ED staff member" />
-      </div>
-      <div className="team-info">
-        <h3>Emmerson Dambudzo Mnangagwa</h3>
-<span>President of Zimbabwe</span>
-        <span>Leadership</span>
-      </div>
-    </div>
-
-    <div className="team-card">
-      <div className="team-image">
-        <img src="/staff-3.jpg" alt="ZimSports4ED staff member" />
-      </div>
-      <div className="team-info">
-        <h3>Gabriel Togarepi</h3>
-<span>ZimSports4ED Chairperson</span>
-        <span>Programme Development</span>
-      </div>
-    </div>
-
-    <div className="team-card">
-      <div className="team-image">
-        <img src="/staff-2.jpg" alt="ZimSports4ED staff member" />
-      </div>
-      <div className="team-info">
-       <h3>Kudakwashe Tagwirei</h3>
-<span>Sponsor</span>
-        <span>Youth & Community</span>
-      </div>
-    </div>
-
-  </div>
-</section>
 {/* Contact Section */}
 <section id="contact" className="contact-section">
   <div className="contact-content">
@@ -1300,6 +1248,16 @@ function App() {
             required
           />
         </div>
+        <div className="form-group">
+  <label htmlFor="gender">Gender</label>
+
+  <select id="gender" name="gender" required>
+    <option value="">Select gender</option>
+    <option value="Male">Male</option>
+    <option value="Female">Female</option>
+    <option value="Prefer not to say">Prefer not to say</option>
+  </select>
+</div>
 
         <div className="form-group">
           <label htmlFor="email">Email Address</label>
