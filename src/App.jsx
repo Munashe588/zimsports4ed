@@ -253,6 +253,33 @@ const sportsData = {
     opportunities:
       "Young cyclists can develop through clubs, community activities, competitions, coaching and structured sporting pathways.",
   },
+  Motorsport: {
+  overview:
+    "Motorsport includes different forms of motor racing that develop driving skills, concentration, discipline, technical knowledge and competitive ability.",
+
+  why:
+    "Motorsport gives young people opportunities to develop confidence, responsibility, technical awareness and competitive skills in a structured sporting environment.",
+
+  activities: [
+    "Karting",
+    "Circuit racing",
+    "Rallying",
+    "Motorcycle racing",
+    "Driver development",
+    "Motorsport safety and training",
+  ],
+
+  skills: [
+    "Vehicle control",
+    "Concentration and reaction",
+    "Decision-making",
+    "Technical awareness",
+    "Discipline and responsibility",
+  ],
+
+  opportunities:
+    "Young participants can develop through karting, motorsport clubs, training programmes, competitions and structured motorsport development pathways.",
+},
 
   "Table Tennis": {
     overview:
@@ -451,7 +478,7 @@ if (window.location.pathname === '/admin') {
 <nav className="navbar">
 
   <div className="logo">
-    <img src="/Logo.png" alt="ZimSports4ED logo" />
+    <img src="/Logo.png" alt="ZimSport4ed logo" />
   </div>
 
   {/* Mobile hamburger button */}
@@ -542,7 +569,7 @@ if (window.location.pathname === '/admin') {
     <h2>Sport as a pathway to a better future.</h2>
 
     <p className="about-text">
-      ZimSports4ED uses the power of sport to empower young people,
+      ZimSport4ed uses the power of sport to empower young people,
       identify grassroots talent, create opportunities, and strengthen
       communities across Zimbabwe.
     </p>
@@ -631,61 +658,125 @@ if (window.location.pathname === '/admin') {
     </p>
   </div>
 
-  {/* Sports Disciplines */}
-  <div className="sports-disciplines">
+ {/* Sports Disciplines */}
+<div className="sports-disciplines">
+
+  {/* Background Video */}
+  <video
+    className="sports-background-video"
+    autoPlay
+    muted
+    loop
+    playsInline
+  >
+    <source src="/sports-bg.mp4" type="video/mp4" />
+  </video>
+
+  {/* Dark Overlay */}
+  <div className="sports-video-overlay"></div>
+
+  {/* Content above video */}
+  <div className="sports-disciplines-content">
+
     <h3>Sports Disciplines</h3>
 
     <div className="discipline-list">
-  <button className="sport-button" onClick={() => setSelectedSport("Football")}>
-    Football
-  </button>
 
-  <button className="sport-button" onClick={() => setSelectedSport("Athletics")}>
-    Athletics
-  </button>
+      <button
+        className="sport-button"
+        onClick={() => setSelectedSport("Football")}
+      >
+        Football
+      </button>
 
-  <button className="sport-button" onClick={() => setSelectedSport("Basketball")}>
-    Basketball
-  </button>
+      <button
+        className="sport-button"
+        onClick={() => setSelectedSport("Athletics")}
+      >
+        Athletics
+      </button>
 
-  <button className="sport-button" onClick={() => setSelectedSport("Netball")}>
-    Netball
-  </button>
+      <button
+        className="sport-button"
+        onClick={() => setSelectedSport("Basketball")}
+      >
+        Basketball
+      </button>
 
-  <button className="sport-button" onClick={() => setSelectedSport("Volleyball")}>
-    Volleyball
-  </button>
+      <button
+        className="sport-button"
+        onClick={() => setSelectedSport("Netball")}
+      >
+        Netball
+      </button>
 
-  <button className="sport-button" onClick={() => setSelectedSport("Rugby")}>
-    Rugby
-  </button>
+      <button
+        className="sport-button"
+        onClick={() => setSelectedSport("Volleyball")}
+      >
+        Volleyball
+      </button>
 
-  <button className="sport-button" onClick={() => setSelectedSport("Boxing")}>
-    Boxing
-  </button>
+      <button
+        className="sport-button"
+        onClick={() => setSelectedSport("Rugby")}
+      >
+        Rugby
+      </button>
 
-  <button className="sport-button" onClick={() => setSelectedSport("Tennis")}>
-    Tennis
-  </button>
+      <button
+        className="sport-button"
+        onClick={() => setSelectedSport("Boxing")}
+      >
+        Boxing
+      </button>
 
-  <button className="sport-button" onClick={() => setSelectedSport("Swimming")}>
-    Swimming
-  </button>
+      <button
+        className="sport-button"
+        onClick={() => setSelectedSport("Tennis")}
+      >
+        Tennis
+      </button>
 
-  <button className="sport-button" onClick={() => setSelectedSport("Cycling")}>
-    Cycling
-  </button>
+      <button
+        className="sport-button"
+        onClick={() => setSelectedSport("Swimming")}
+      >
+        Swimming
+      </button>
 
-  <button className="sport-button" onClick={() => setSelectedSport("Table Tennis")}>
-    Table Tennis
-  </button>
+      <button
+        className="sport-button"
+        onClick={() => setSelectedSport("Cycling")}
+      >
+        Cycling
+      </button>
+      <button
+  className="sport-button"
+  onClick={() => setSelectedSport("Motorsport")}
+>
+  Motorsport
+</button>
 
-  <button className="sport-button" onClick={() => setSelectedSport("Chess")}>
-    Chess
-  </button>
-</div>
+      <button
+        className="sport-button"
+        onClick={() => setSelectedSport("Table Tennis")}
+      >
+        Table Tennis
+      </button>
+
+      <button
+        className="sport-button"
+        onClick={() => setSelectedSport("Chess")}
+      >
+        Chess
+      </button>
+
+    </div>
+
   </div>
 
+</div>
   {/* Our Programmes */}
   <div className="programmes-heading">
     <p className="section-label">OUR PROGRAMMES</p>
@@ -945,7 +1036,7 @@ if (window.location.pathname === '/admin') {
 
     <img
       src={selectedGalleryImage}
-      alt="ZimSports4ED gallery"
+      alt="ZimSport4ed gallery"
       onClick={(event) => event.stopPropagation()}
     />
   </div>
@@ -960,7 +1051,7 @@ if (window.location.pathname === '/admin') {
       <h2>From grassroots talent to greater opportunities.</h2>
 
       <p>
-        ZimSports4ED creates a clear pathway for young people
+        ZimSport4ed creates a clear pathway for young people
         to discover their potential, develop their abilities,
         connect with opportunities, and progress towards their goals.
       </p>
@@ -1025,7 +1116,7 @@ if (window.location.pathname === '/admin') {
 
       <p className="news-intro">
         Follow the latest developments, activities and
-        opportunities connected to ZimSports4ED.
+        opportunities connected to ZimSport4ed.
       </p>
     </div>
 
@@ -1038,7 +1129,7 @@ if (window.location.pathname === '/admin') {
 
     <article className="news-card">
      <div className="news-image">
-  <img src="/New-1.jpg" alt="ZimSports4ED youth talent development" />
+  <img src="/New-1.jpg" alt="ZimSport4ed youth talent development" />
 </div>
 
       <div className="news-info">
@@ -1067,7 +1158,7 @@ if (window.location.pathname === '/admin') {
 
     <article className="news-card">
       <div className="news-image">
-  <img src="/news-2.jpg" alt="ZimSports4ED sporting talent programme" />
+  <img src="/news-2.jpg" alt="ZimSport4ed sporting talent programme" />
 </div>
 
       <div className="news-info">
@@ -1078,7 +1169,7 @@ if (window.location.pathname === '/admin') {
         </h3>
 
         <p>
-          ZIMSPORTS4ED has demonstrated its support for
+          ZimSport4ed has demonstrated its support for
           Zimbabwean football and the development of sport
           at different levels.
         </p>
@@ -1096,7 +1187,7 @@ if (window.location.pathname === '/admin') {
 
     <article className="news-card">
       <div className="news-image">
-  <img src="/news-3.jpg" alt="ZimSports4ED youth sports tournament" />
+  <img src="/news-3.jpg" alt="ZimSport4ed youth sports tournament" />
 </div>
 
       <div className="news-info">
@@ -1108,7 +1199,7 @@ if (window.location.pathname === '/admin') {
 
         <p>
           A youth sporting tournament facilitated by
-          ZIMSPORTS4ED formed part of the Munhumutapa Day
+          ZimSport4ed formed part of the Munhumutapa Day
           celebrations in Harare.
         </p>
 
@@ -1201,11 +1292,11 @@ if (window.location.pathname === '/admin') {
       <p>
         Whether you are a young athlete, coach, school, organisation,
         sponsor, volunteer, or community member, there is a place
-        for you in the ZimSports4ED movement.
+        for you in the ZimSport4ed movement.
       </p>
 
       <div className="contact-details">
-        <h3>Connect with ZimSports4ED</h3>
+        <h3>Connect with ZimSport4ed</h3>
 
         <p>
           For partnerships, programmes, opportunities and general
@@ -1359,6 +1450,26 @@ if (window.location.pathname === '/admin') {
     </svg>
     <span>TikTok</span>
   </a>
+  <a
+  href="https://youtube.com/@zimsport4ed?si=WFf0hb4hllYSWDNq"
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label="Zimsport4ED YouTube"
+  title="YouTube"
+  className="youtube-link"
+>
+  <svg
+    viewBox="0 0 24 24"
+    width="24"
+    height="24"
+    fill="currentColor"
+    aria-hidden="true"
+  >
+    <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.121 2.136c1.872.505 9.377.505 9.377.505s7.505 0 9.376-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+  </svg>
+
+  <span>YouTube</span>
+</a>
 </div>
 </section>
 
@@ -1366,7 +1477,7 @@ if (window.location.pathname === '/admin') {
 <footer className="footer">
   <div className="footer-top">
     <div className="footer-brand">
-      <h3>ZimSports4ED</h3>
+      <h3>ZimSport4ed</h3>
       <p>
         Empowering Zimbabwe's youth through sport, opportunity,
         and community.
@@ -1392,7 +1503,7 @@ if (window.location.pathname === '/admin') {
 
   <div className="footer-bottom">
     <div>
-  <p>© 2026 ZimSports4ED. All rights reserved.</p>
+  <p>© 2026 ZimSport4ed. All rights reserved.</p>
   <p className="developer-credit">
     Digital Platform Design & Development — Munashe Tsoka • IT Support and Web Developer
   </p>

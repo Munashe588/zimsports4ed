@@ -3939,3 +3939,992 @@ input[type="checkbox"] {
     font-size: 28px;
   }
 }
+/* =========================================
+   EXACT MOBILE HERO BUTTON FIX
+========================================= */
+
+@media (max-width: 600px) {
+
+  .hero .hero-buttons {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    gap: 8px !important;
+
+    width: 100% !important;
+    max-width: 310px !important;
+
+    margin: 16px 0 0 !important;
+    padding: 0 !important;
+
+    position: static !important;
+    transform: none !important;
+  }
+
+  .hero .hero-buttons .primary-button,
+  .hero .hero-buttons .secondary-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    flex: 0 0 auto !important;
+
+    width: auto !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+    height: 40px !important;
+
+    margin: 0 !important;
+    padding: 0 13px !important;
+
+    box-sizing: border-box !important;
+
+    font-size: 12px !important;
+    line-height: 1 !important;
+
+    position: static !important;
+    transform: none !important;
+
+    white-space: nowrap !important;
+  }
+
+  .hero .hero-buttons .primary-button {
+    min-width: 155px !important;
+  }
+
+  .hero .hero-buttons .secondary-button {
+    min-width: 105px !important;
+  }
+}
+/* ==========================================================
+   ZIMSPORT4ED — MASTER MOBILE HOMEPAGE FIX
+   KEEP THIS AS THE LAST HOMEPAGE CSS IN App.css
+========================================================== */
+
+@media (max-width: 768px) {
+
+  /* -----------------------------------------
+     PAGE SAFETY
+  ----------------------------------------- */
+
+  html,
+  body,
+  #root {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    overflow-x: hidden !important;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+
+  /* =========================================
+     NAVBAR
+  ========================================= */
+
+  .navbar {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 5000 !important;
+
+    width: 100% !important;
+    height: 72px !important;
+    min-height: 72px !important;
+
+    padding: 8px 16px !important;
+
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    background: #ffffff !important;
+
+    border-bottom: 1px solid #eeeeee !important;
+  }
+
+
+  /* Logo */
+
+  .navbar .logo {
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+  }
+
+  .navbar .logo img {
+    display: block !important;
+
+    width: auto !important;
+    height: 50px !important;
+    max-height: 50px !important;
+  }
+
+
+  /* Hide desktop Get Involved */
+
+  .navbar > .join-button {
+    display: none !important;
+  }
+
+
+  /* Hamburger */
+
+  .mobile-menu-button {
+    display: flex !important;
+
+    width: 44px !important;
+    height: 44px !important;
+
+    margin: 0 0 0 auto !important;
+    padding: 7px !important;
+
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    gap: 5px !important;
+
+    background: transparent !important;
+    border: 0 !important;
+
+    cursor: pointer !important;
+
+    position: relative !important;
+    z-index: 5002 !important;
+  }
+
+  .mobile-menu-button span {
+    display: block !important;
+
+    width: 27px !important;
+    height: 3px !important;
+
+    margin: 0 !important;
+
+    background: #111111 !important;
+    border-radius: 3px !important;
+  }
+
+
+  /* Mobile navigation dropdown */
+
+  .navbar .nav-links {
+    display: none !important;
+
+    position: absolute !important;
+
+    top: 72px !important;
+    left: 0 !important;
+    right: 0 !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+    padding: 8px 18px 18px !important;
+
+    flex-direction: column !important;
+    align-items: stretch !important;
+
+    gap: 0 !important;
+
+    background: #ffffff !important;
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12) !important;
+
+    z-index: 5001 !important;
+  }
+
+  .navbar .nav-links.nav-open {
+    display: flex !important;
+  }
+
+  .navbar .nav-links a {
+    display: block !important;
+
+    width: 100% !important;
+
+    padding: 13px 4px !important;
+
+    color: #111111 !important;
+
+    font-size: 15px !important;
+    font-weight: 600 !important;
+
+    text-decoration: none !important;
+
+    border-bottom: 1px solid #eeeeee !important;
+  }
+
+
+  /* =========================================
+     HERO
+  ========================================= */
+
+  .hero {
+    position: relative !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+    min-height: 500px !important;
+    max-height: none !important;
+
+    aspect-ratio: auto !important;
+
+    margin: 0 !important;
+    padding: 0 !important;
+
+    display: flex !important;
+    align-items: center !important;
+
+    overflow: visible !important;
+
+    color: #ffffff !important;
+
+    background-image:
+      linear-gradient(
+        90deg,
+        rgba(0, 0, 0, 0.72) 0%,
+        rgba(0, 0, 0, 0.48) 55%,
+        rgba(0, 0, 0, 0.18) 100%
+      ),
+      url('/hero.jpg') !important;
+
+    background-size: cover !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+  }
+
+
+  /* Hero content */
+
+  .hero .hero-content {
+    position: static !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 !important;
+
+    padding: 52px 20px !important;
+
+    transform: none !important;
+
+    text-align: left !important;
+  }
+
+
+  /* Small gold heading */
+
+  .hero .hero-small {
+    display: block !important;
+
+    width: auto !important;
+
+    margin: 0 0 12px !important;
+
+    color: #f5b400 !important;
+
+    font-size: 10px !important;
+    line-height: 1.3 !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: 1.4px !important;
+  }
+
+
+  /* Main heading */
+
+  .hero h1 {
+    width: 100% !important;
+    max-width: 340px !important;
+
+    margin: 0 !important;
+
+    color: #ffffff !important;
+
+    font-size: 39px !important;
+    line-height: 1.02 !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: -1.2px !important;
+
+    white-space: normal !important;
+  }
+
+
+  /* Hero paragraph */
+
+  .hero .hero-text {
+    width: 100% !important;
+    max-width: 320px !important;
+
+    margin: 16px 0 0 !important;
+
+    color: rgba(255, 255, 255, 0.92) !important;
+
+    font-size: 14px !important;
+    line-height: 1.5 !important;
+  }
+
+
+  /* =========================================
+     HERO BUTTONS
+  ========================================= */
+
+  .hero .hero-buttons {
+    position: static !important;
+
+    display: flex !important;
+
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+
+    align-items: center !important;
+    justify-content: flex-start !important;
+
+    width: 100% !important;
+    max-width: 290px !important;
+
+    gap: 8px !important;
+
+    margin: 20px 0 0 !important;
+    padding: 0 !important;
+
+    transform: none !important;
+  }
+
+
+  .hero .hero-buttons .primary-button,
+  .hero .hero-buttons .secondary-button {
+    position: static !important;
+
+    display: inline-flex !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    width: auto !important;
+
+    height: 40px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+
+    margin: 0 !important;
+    padding: 0 11px !important;
+
+    border-radius: 5px !important;
+
+    font-size: 11px !important;
+    line-height: 1 !important;
+
+    font-weight: 700 !important;
+
+    white-space: nowrap !important;
+
+    transform: none !important;
+  }
+
+
+  .hero .hero-buttons .primary-button {
+    flex: 1.35 !important;
+
+    background: #f5b400 !important;
+    color: #111111 !important;
+
+    border: 2px solid #f5b400 !important;
+  }
+
+
+  .hero .hero-buttons .secondary-button {
+    flex: 0.9 !important;
+
+    background: transparent !important;
+    color: #ffffff !important;
+
+    border: 2px solid #ffffff !important;
+  }
+
+
+  /* =========================================
+     ABOUT / WHO WE ARE
+  ========================================= */
+
+  .about-section {
+    width: 100% !important;
+
+    padding: 60px 20px !important;
+
+    background: #f5f5f5 !important;
+  }
+
+  .about-content {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 auto !important;
+  }
+
+  .about-content .section-label {
+    margin-bottom: 14px !important;
+
+    font-size: 11px !important;
+    letter-spacing: 2px !important;
+  }
+
+  .about-content h2 {
+    max-width: 340px !important;
+
+    margin: 0 0 20px !important;
+
+    font-size: 37px !important;
+    line-height: 1.08 !important;
+
+    letter-spacing: -1px !important;
+  }
+
+  .about-text {
+    max-width: 100% !important;
+
+    margin-bottom: 32px !important;
+
+    font-size: 15px !important;
+    line-height: 1.65 !important;
+  }
+
+
+  /* Vision + Mission */
+
+  .about-cards {
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 15px !important;
+  }
+
+  .about-card {
+    width: 100% !important;
+
+    padding: 25px 20px !important;
+  }
+
+  .about-card h3 {
+    font-size: 21px !important;
+  }
+
+  .about-card p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+
+  /* =========================================
+     FOUR VALUE CARDS
+  ========================================= */
+
+  .values-section {
+    width: 100% !important;
+
+    padding: 60px 20px !important;
+  }
+
+  .values-header {
+    width: 100% !important;
+
+    margin: 0 0 35px !important;
+
+    text-align: left !important;
+  }
+
+  .values-header h2 {
+    margin: 10px 0 15px !important;
+
+    font-size: 35px !important;
+    line-height: 1.1 !important;
+  }
+
+  .values-header > p:last-child {
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+  }
+
+  .values-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 !important;
+
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 14px !important;
+  }
+
+  .value-card {
+    width: 100% !important;
+    min-width: 0 !important;
+    min-height: 0 !important;
+
+    margin: 0 !important;
+
+    padding: 24px 20px !important;
+  }
+
+  .value-card span {
+    font-size: 12px !important;
+  }
+
+  .value-card h3 {
+    margin: 25px 0 10px !important;
+
+    font-size: 21px !important;
+    line-height: 1.2 !important;
+  }
+
+  .value-card p {
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+  }
+
+
+  /* =========================================
+     SPORTS / PROGRAMMES
+  ========================================= */
+
+  .sports-section {
+    width: 100% !important;
+
+    padding: 60px 20px !important;
+  }
+
+  .sports-header {
+    width: 100% !important;
+
+    margin-bottom: 40px !important;
+  }
+
+  .sports-header h2 {
+    font-size: 36px !important;
+    line-height: 1.08 !important;
+  }
+
+  .sports-header > p:last-child {
+    font-size: 15px !important;
+  }
+
+  .sports-grid {
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 15px !important;
+  }
+
+  .sport-card {
+    width: 100% !important;
+    min-width: 0 !important;
+
+    padding: 25px 20px !important;
+  }
+
+
+  /* =========================================
+     TALENT PATHWAY
+  ========================================= */
+
+  .pathway-section {
+    width: 100% !important;
+
+    padding: 60px 20px !important;
+  }
+
+  .pathway-intro {
+    margin-bottom: 40px !important;
+  }
+
+  .pathway-intro h2 {
+    font-size: 36px !important;
+    line-height: 1.1 !important;
+  }
+
+
+  /* =========================================
+     NEWS
+  ========================================= */
+
+  .news-section {
+    width: 100% !important;
+
+    padding: 60px 20px !important;
+  }
+
+  .news-header {
+    display: block !important;
+
+    margin-bottom: 35px !important;
+  }
+
+  .news-header h2 {
+    font-size: 36px !important;
+  }
+
+  .news-grid {
+    width: 100% !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 18px !important;
+  }
+
+
+  /* =========================================
+     GALLERY
+  ========================================= */
+
+  .gallery-section {
+    width: 100% !important;
+
+    padding: 60px 20px !important;
+  }
+
+  .gallery-header h2 {
+    font-size: 36px !important;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+
+  /* =========================================
+     CONTACT
+  ========================================= */
+
+  .contact-section {
+    width: 100% !important;
+
+    padding: 60px 20px !important;
+  }
+
+  .contact-content {
+    width: 100% !important;
+
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+
+    gap: 35px !important;
+  }
+
+  .contact-text h2 {
+    font-size: 36px !important;
+  }
+
+  .contact-form-container {
+    width: 100% !important;
+
+    padding: 24px 18px !important;
+  }
+
+
+  /* =========================================
+     FOOTER
+  ========================================= */
+
+  .footer {
+    width: 100% !important;
+
+    padding: 50px 20px 25px !important;
+  }
+
+  .footer-top {
+    width: 100% !important;
+
+    flex-direction: column !important;
+
+    gap: 35px !important;
+  }
+
+  .footer-links {
+    width: 100% !important;
+
+    gap: 45px !important;
+
+    flex-wrap: wrap !important;
+  }
+
+  .footer-bottom {
+    width: 100% !important;
+
+    flex-direction: column !important;
+
+    align-items: flex-start !important;
+
+    gap: 8px !important;
+  }
+}
+
+
+/* =========================================
+   EXTRA SMALL PHONES
+========================================= */
+
+@media (max-width: 390px) {
+
+  .hero {
+    min-height: 480px !important;
+  }
+
+  .hero .hero-content {
+    padding: 45px 16px !important;
+  }
+
+  .hero h1 {
+    max-width: 300px !important;
+
+    font-size: 34px !important;
+  }
+
+  .hero .hero-text {
+    max-width: 290px !important;
+
+    font-size: 13px !important;
+  }
+
+  .hero .hero-buttons {
+    max-width: 275px !important;
+  }
+
+  .hero .hero-buttons .primary-button,
+  .hero .hero-buttons .secondary-button {
+    padding: 0 8px !important;
+
+    font-size: 10px !important;
+  }
+}
+/* =========================================
+   SPORTS VIDEO - CLEAR VISIBLE DESIGN
+========================================= */
+
+.sports-disciplines {
+  position: relative !important;
+  overflow: hidden !important;
+  padding: 45px 30px !important;
+  background: transparent !important;
+}
+
+.sports-background-video {
+  position: absolute !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  z-index: -2 !important;
+}
+
+.sports-video-overlay {
+  background: transparent !important;
+}
+
+/* Heading */
+.sports-disciplines h3 {
+  color: white !important;
+  position: relative !important;
+  z-index: 2 !important;
+  font-size: 32px !important;
+  margin-bottom: 25px !important;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8) !important;
+}
+
+/* Sports grid */
+.sports-disciplines .discipline-list {
+  position: relative !important;
+  z-index: 2 !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 14px !important;
+}
+
+/* Transparent sport buttons */
+.sports-disciplines .sport-button {
+  background: rgba(0, 0, 0, 0.22) !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.35) !important;
+  border-radius: 10px !important;
+
+  color: white !important;
+
+  padding: 24px 28px !important;
+
+  backdrop-filter: blur(2px) !important;
+  -webkit-backdrop-filter: blur(2px) !important;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease,
+    border-color 0.25s ease !important;
+}
+
+/* Hover */
+.sports-disciplines .sport-button:hover {
+  background: rgba(245, 180, 0, 0.85) !important;
+  color: #111 !important;
+  border-color: #f5b400 !important;
+  transform: translateY(-3px) !important;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+  .sports-disciplines {
+    padding: 45px 20px !important;
+  }
+
+  .sports-disciplines h3 {
+    font-size: 28px !important;
+  }
+
+  .sports-disciplines .discipline-list {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+
+  .sports-disciplines .sport-button {
+    padding: 18px 20px !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+  }
+}
+/* ==================================================
+   FINAL SPORTS DISCIPLINES VIDEO VISIBILITY FIX
+================================================== */
+
+.sports-disciplines,
+.sports-disciplines-content,
+.sports-disciplines .discipline-list {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Video fills the entire Sports Disciplines area */
+.sports-disciplines {
+  position: relative !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
+  padding: 45px 30px !important;
+}
+
+/* Background video */
+.sports-disciplines .sports-background-video {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  object-fit: cover !important;
+  object-position: center !important;
+
+  z-index: -2 !important;
+
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+/* REMOVE dark video overlay completely */
+.sports-disciplines .sports-video-overlay {
+  display: none !important;
+}
+
+/* Content above video */
+.sports-disciplines-content {
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100% !important;
+}
+
+/* Heading */
+.sports-disciplines h3 {
+  position: relative !important;
+  z-index: 2 !important;
+
+  color: #ffffff !important;
+  font-size: 32px !important;
+
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Grid */
+.sports-disciplines .discipline-list {
+  position: relative !important;
+  z-index: 2 !important;
+
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr) !important;
+
+  gap: 14px !important;
+}
+
+/* IMPORTANT: remove existing black button backgrounds */
+.sports-disciplines .discipline-list .sport-button {
+  background: rgba(255, 255, 255, 0.16) !important;
+  background-color: rgba(255, 255, 255, 0.16) !important;
+
+  color: #ffffff !important;
+
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  border-radius: 10px !important;
+
+  padding: 24px 28px !important;
+
+  box-shadow: none !important;
+
+  backdrop-filter: blur(1px) !important;
+  -webkit-backdrop-filter: blur(1px) !important;
+
+  text-shadow: 0 1px 5px rgba(0, 0, 0, 0.9) !important;
+}
+
+/* Gold hover */
+.sports-disciplines .discipline-list .sport-button:hover {
+  background: rgba(245, 180, 0, 0.88) !important;
+  background-color: rgba(245, 180, 0, 0.88) !important;
+
+  color: #111 !important;
+
+  border-color: #f5b400 !important;
+
+  text-shadow: none !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+  .sports-disciplines {
+    padding: 40px 20px !important;
+  }
+
+  .sports-disciplines .discipline-list {
+    grid-template-columns: 1fr !important;
+  }
+
+  .sports-disciplines .discipline-list .sport-button {
+    background: rgba(255, 255, 255, 0.14) !important;
+    background-color: rgba(255, 255, 255, 0.14) !important;
+    padding: 18px 20px !important;
+  }
+}
