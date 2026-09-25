@@ -4928,3 +4928,25 @@ input[type="checkbox"] {
     padding: 18px 20px !important;
   }
 }
+/* =========================================
+   MOBILE HERO - SHOW FULL HERO IMAGE
+========================================= */
+
+@media (max-width: 768px) {
+  .hero {
+    width: 100% !important;
+
+    background-image:
+      linear-gradient(
+        rgba(0, 0, 0, 0.30),
+        rgba(0, 0, 0, 0.30)
+      ),
+      url('/hero.jpg') !important;
+
+    background-size: 100% auto !important;
+    background-position: center top !important;
+    background-repeat: no-repeat !important;
+
+    background-color: #111 !important;
+  }
+}
