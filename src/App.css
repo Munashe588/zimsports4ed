@@ -4990,3 +4990,556 @@ input[type="checkbox"] {
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8) !important;
   }
 }
+/* =========================================
+   ZIMSPORT4ED ADMIN LOGIN
+========================================= */
+
+.admin-login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: #f5f7f6;
+}
+
+.admin-login-card {
+  width: 100%;
+  max-width: 440px;
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.admin-login-logo {
+  display: block;
+  width: 100px;
+  height: auto;
+  margin: 0 auto 25px;
+}
+
+.admin-login-card .section-label {
+  text-align: center;
+  color: #008c45;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.admin-login-card h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #111;
+  margin: 0 0 10px;
+}
+
+.admin-login-intro {
+  text-align: center;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.admin-login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.admin-login-card label {
+  font-weight: 700;
+  color: #222;
+  margin: 0 0 8px;
+}
+
+.admin-login-card input {
+  width: 100%;
+  padding: 14px 15px;
+  margin-bottom: 20px;
+  border: 1px solid #d6d6d6;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  background: #fff;
+  color: #111;
+}
+
+.admin-login-card input:focus {
+  border-color: #008c45;
+  box-shadow: 0 0 0 3px rgba(0, 140, 69, 0.1);
+}
+
+.admin-login-button {
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  background: #008c45;
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.admin-login-button:hover {
+  background: #006f37;
+}
+
+.admin-login-error {
+  background: #fff1f1;
+  color: #b42318;
+  border-radius: 7px;
+  padding: 10px 12px;
+  margin: 0 0 18px;
+  font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .admin-login-page {
+    padding: 25px 16px;
+  }
+
+  .admin-login-card {
+    padding: 30px 22px;
+  }
+
+  .admin-login-logo {
+    width: 85px;
+  }
+
+  .admin-login-card h1 {
+    font-size: 28px;
+  }
+}
+/* =========================================
+   ZIMSPORT4ED ADMIN DASHBOARD
+========================================= */
+
+.admin-page {
+  min-height: 100vh;
+  background: #f5f7f6;
+  color: #171717;
+}
+
+.admin-header {
+  min-height: 90px;
+  background: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 12px 5%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-header-brand {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.admin-header img {
+  width: 85px;
+  height: auto;
+}
+
+.admin-header span {
+  color: #a87600;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 3px;
+}
+
+.admin-header h1 {
+  margin: 4px 0 0;
+  font-size: 27px;
+}
+
+.admin-logout-button {
+  background: #111;
+  color: #fff;
+  border: none;
+  padding: 11px 22px;
+  border-radius: 7px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-logout-button:hover {
+  background: #008c45;
+}
+
+.admin-content {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  padding: 55px 0 80px;
+}
+
+.admin-welcome {
+  text-align: left;
+  background: #fff;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(0,0,0,.06);
+}
+
+.admin-welcome h2 {
+  font-size: 34px;
+  margin: 5px 0 10px;
+}
+
+.admin-welcome p:last-child {
+  color: #666;
+  margin-bottom: 0;
+}
+
+.admin-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin: 25px 0;
+}
+
+.admin-stat-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  border-left: 4px solid #008c45;
+  box-shadow: 0 6px 20px rgba(0,0,0,.05);
+}
+
+.admin-stat-card span {
+  display: block;
+  color: #666;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.admin-stat-card strong {
+  font-size: 32px;
+}
+
+.admin-tools {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 12px;
+}
+
+.admin-tools input,
+.admin-tools select {
+  width: 100%;
+  background: #fff;
+  color: #222;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  padding: 13px 14px;
+  font-size: 15px;
+}
+
+.admin-tools input:focus,
+.admin-tools select:focus {
+  outline: none;
+  border-color: #008c45;
+}
+
+.admin-results-count {
+  color: #666;
+  font-size: 14px;
+  margin: 15px 0;
+}
+
+.admin-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 25px rgba(0,0,0,.06);
+}
+
+.admin-athletes-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 900px;
+}
+
+.admin-athletes-table th {
+  text-align: left;
+  background: #f0f3f1;
+  color: #333;
+  padding: 16px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+}
+
+.admin-athletes-table td {
+  padding: 16px;
+  border-top: 1px solid #ececec;
+}
+
+.admin-athletes-table tbody tr:hover {
+  background: #fafcfa;
+}
+
+.admin-view-button {
+  background: #008c45;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-view-button:hover {
+  background: #006d36;
+}
+
+.admin-empty {
+  text-align: center;
+  padding: 35px !important;
+  color: #777;
+}
+
+/* Athlete profile popup */
+
+.athlete-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0,0,0,.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.athlete-modal {
+  width: min(760px, 100%);
+  max-height: 90vh;
+  overflow-y: auto;
+  background: #fff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.25);
+}
+
+.athlete-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 22px;
+}
+
+.athlete-modal-header h2 {
+  margin: 5px 0 0;
+  font-size: 29px;
+}
+
+.athlete-modal-close {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background: #f1f1f1;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.athlete-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.athlete-detail {
+  background: #f7f8f7;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.athlete-detail span {
+  display: block;
+  color: #777;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.athlete-detail strong {
+  overflow-wrap: anywhere;
+}
+
+/* Mobile admin */
+
+@media (max-width: 768px) {
+
+  .admin-header {
+    padding: 12px 18px;
+  }
+
+  .admin-header img {
+    width: 65px;
+  }
+
+  .admin-header h1 {
+    font-size: 19px;
+  }
+
+  .admin-header span {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+  }
+
+  .admin-logout-button {
+    padding: 9px 13px;
+  }
+
+  .admin-content {
+    width: 92%;
+    padding-top: 30px;
+  }
+
+  .admin-welcome {
+    padding: 24px 20px;
+  }
+
+  .admin-welcome h2 {
+    font-size: 28px;
+  }
+
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-tools {
+    grid-template-columns: 1fr;
+  }
+
+  .athlete-details {
+    grid-template-columns: 1fr;
+  }
+
+  .athlete-modal {
+    padding: 22px 18px;
+  }
+}
+.athlete-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.admin-delete-button {
+  background: #c62828;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 11px 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-delete-button:hover {
+  background: #a91f1f;
+}
+
+.admin-close-button {
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 7px;
+  padding: 11px 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-close-button:hover {
+  background: #008c45;
+}
+
+@media (max-width: 600px) {
+  .athlete-modal-actions {
+    flex-direction: column-reverse;
+  }
+
+  .admin-delete-button,
+  .admin-close-button {
+    width: 100%;
+  }
+}
+/* =========================================
+   ADMIN ATHLETE STATUS
+========================================= */
+
+.admin-status {
+  display: inline-block;
+  padding: 6px 11px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.status-new {
+  background: #e8f1ff;
+  color: #2457a6;
+}
+
+.status-reviewed {
+  background: #fff4d6;
+  color: #8a6200;
+}
+
+.status-shortlisted {
+  background: #eee7ff;
+  color: #6236a8;
+}
+
+.status-approved {
+  background: #e3f7ea;
+  color: #08783d;
+}
+
+.status-rejected {
+  background: #ffe7e7;
+  color: #a32626;
+}
+
+.athlete-status-manager {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f7f8f7;
+  border-radius: 10px;
+}
+
+.athlete-status-manager label {
+  display: block;
+  color: #222;
+  font-size: 13px;
+  font-weight: 800;
+  margin-bottom: 9px;
+}
+
+.athlete-status-manager select {
+  width: 100%;
+  padding: 12px;
+  background: #fff;
+  color: #222;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  font-size: 15px;
+}
+@media (min-width: 769px) {
+  .admin-tools {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
