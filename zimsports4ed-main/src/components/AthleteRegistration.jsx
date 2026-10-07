@@ -340,7 +340,7 @@ function AthleteRegistration() {
                 <option>Golf</option>
                 <option>Snooker</option>
                 <option>Pool</option>
-                <option>Darts</option>
+                <option>Darts.</option>
                 <option>Gymnastics</option>
                 <option>Traditional Games</option>
               </select>
