@@ -330,19 +330,7 @@ function AthleteRegistration() {
                 <option>Cycling</option>
                 <option>Table Tennis</option>
                 <option>Chess</option>
-                <option>Cricket</option>
-                <option>Handball</option>
-                <option>Javelin</option>
-                <option>High Jump</option>
-                <option>Long Jump</option>
-                <option>Shortput</option>
-                <option>Hockey</option>
-                <option>Golf</option>
-                <option>Snooker</option>
-                <option>Pool</option>
-                <option>Darts.</option>
-                <option>Gymnastics</option>
-                <option>Traditional Games</option>
+                
               </select>
 
             </div>
